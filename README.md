@@ -13,6 +13,9 @@ Per scongiurare errori di configurazione sono partito dalla configurazione forni
 - Dentro la cartella ho editato il file "model_files" per settare i modelli corretti  
 - Bisogna rieseguire trace.sh (genera il tracing) e run.sh (per lanciare la simulazione) per ottenere le statistiche.  
 
+Il file delle statistiche principali si chiama "stats.txt" e si trova dentro la cartella "outputs".
+Per esempio il path completo al file sarà `/tests/cnn10-smv/outputs/stats.txt`.
+
 Il file "dynamic_trace_acc0.gz" è il file che contiene il tracing della rete.  
 Non lo riporto purtroppo perché troppo grande (+200MB) per CNN10.  
 GitHub si potrebbe lamentare di file più grandi di 100MB.  
@@ -32,6 +35,6 @@ Riporto i passaggi per abilitare l'array sistolico:
 
 Le configurazioni usano degli script un po’ convoluti perché riusano alcuni file all’interno dell’immagine docker.  
 Si potrebbero rendere più semplici copiando i file all'interno delle cartelle ma per ora preferisco rimanere aderente a quanto fatto dagli sviluppatori di SMAUG.  
-Per un corretto funzionamento bisogna quindi copiare questa cartella al path "/workspace/smaug/experiments/sims" nel volume Docker di SMAUG.  
+Per un corretto funzionamento bisogna quindi copiare questa cartella al path `/workspace/smaug/experiments/sims nel volume Docker di SMAUG.  
 Per copiare i file/cartelle bisogna usare docker cp path:sorgente path:destinazione.  
 Documentazione docker cp: https://docs.docker.com/engine/reference/commandline/cp/
