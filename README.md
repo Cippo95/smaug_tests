@@ -10,11 +10,11 @@ Per scongiurare errori di configurazione sono partito dalla configurazione forni
 
 - Ho copiato la cartella dandogli nome cnn10-smv  
 - Ho cancellato tutto il non necessario (dddg, out, outputs, stdout, stderr, dynamic_trace).  
-- Dentro la cartella ho editato il file "model_files" per settare i modelli corretti  
+- Dentro la cartella ho editato il file model_files per settare i modelli corretti  
 - Bisogna rieseguire trace.sh (genera il tracing) e run.sh (per lanciare la simulazione) per ottenere le statistiche.  
 
-Il file delle statistiche principali si chiama "stats.txt" e si trova dentro la cartella "outputs".
-Per esempio il path completo al file sarà `/tests/cnn10-smv/outputs/stats.txt`.
+Il file delle statistiche principali si chiama stats.txt e si trova dentro la cartella outputs.  
+Per esempio il path completo al file sarà `/tests/cnn10-smv/outputs/stats.txt`.  
 
 Il file "dynamic_trace_acc0.gz" è il file che contiene il tracing della rete.  
 Non lo riporto purtroppo perché troppo grande (+200MB) per CNN10.  
