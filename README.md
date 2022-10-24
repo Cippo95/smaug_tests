@@ -6,10 +6,10 @@ Il repository di SMAUG si trova qui: https://github.com/harvard-acc/smaug
 Riporto qui le simulazioni fatte riguardo CNN10 una rete neurale convoluzionale costruita per il dataset CIFAR-10.  
 Questo repository è solo per una condivisione più semplice delle statistiche e dei file di configurazione principali.
 
-Per scongiurare errori di configurazione sono partito dalla configurazione fornita da SMAUG per Minerva:  
+Per scongiurare errori di configurazione sono partito dalla configurazione fornita da SMAUG per Minerva (c'era questa e quella per ltsm, quindi le configurazioni per le altre reti ce le dobbiamo scrivere noi):
 
 - Ho copiato la cartella dandogli nome cnn10-smv  
-- Ho cancellato tutto il non necessario (dddg, out, outputs, stdout, stderr, dynamic_trace).  
+- Ho cancellato tutto il non necessario (dddg..., out, outputs, stdout, stderr, dynamic_trace...)  
 - Dentro la cartella ho editato il file model_files per settare i modelli corretti  
 - Bisogna rieseguire trace.sh (genera il tracing) e run.sh (per lanciare la simulazione) per ottenere le statistiche.  
 
@@ -35,6 +35,6 @@ Riporto i passaggi per abilitare l'array sistolico:
 
 Le configurazioni usano degli script un po’ convoluti perché riusano alcuni file all’interno dell’immagine docker.  
 Si potrebbero rendere più semplici copiando i file all'interno delle cartelle ma per ora preferisco rimanere aderente a quanto fatto dagli sviluppatori di SMAUG.  
-Per un corretto funzionamento bisogna quindi copiare questa cartella al path `/workspace/smaug/experiments/sims nel volume Docker di SMAUG.  
+Per un corretto funzionamento bisogna quindi copiare questa cartella al path `/workspace/smaug/experiments/sims` nel volume Docker di SMAUG.  
 Per copiare i file/cartelle bisogna usare docker cp path:sorgente path:destinazione.  
 Documentazione docker cp: https://docs.docker.com/engine/reference/commandline/cp/
