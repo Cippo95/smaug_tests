@@ -30,5 +30,5 @@ There also sum.sh which is the script that stats.sh calls to calculate the total
 Right now I think that I have found how they achieve their CPU time.  
 I'm looking for the accelerator compute time and data transfer time, I have found something but it is really different from what SMAUG devs/researchers have shown.  
 
-Stats are also very big! to obtain something more compact I have analyzed them and made `useful_stats.txt`.
+Stats are also very big! to obtain something more compact I have analyzed them and made `useful_stats.txt`.  
 With `grep -f useful_stats.txt /PATH/TO/STATS.TXT` you can view (and save if you redirect the output) what for now seems to me that could help in some way.
