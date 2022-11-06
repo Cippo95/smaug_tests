@@ -36,7 +36,7 @@ systolic array from a file provided in SMAUG.
 I also provide some script to analize the stats, run: `bash stats.sh PATH/TO/STATS.TXT`  
 There also sum.sh which is the script that stats.sh calls to calculate the total sum of a single stat.  
 
-Right now I think that I have found how they achieve their CPU time.
+Right now I think that I have found how they achieve their CPU time.  
 Now I'm looking for the accelerator compute time and data transfer time, I have
 found something but it is really different from what SMAUG devs/researchers have
 shown.  
