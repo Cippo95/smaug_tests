@@ -28,7 +28,7 @@ But it has only one CPU instead of eight (--num-cpu=1) because I find stats
 being more manageable this way.  
 
 The configurations of the accelerators are the same as provided by SMAUG in 
-their experiments folder for minerva (smv and gem5.cfg).  
+their experiments folder for minerva (smv-accel.cfg and gem5.cfg).  
 
 I have been able of testing also the systolic array that sadly works only for
 convolutions: folders with -sys appended have this enabled.  
