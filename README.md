@@ -15,15 +15,14 @@ this:
 `docker cp host:source container:destination`.   
 Docker docs about cp: https://docs.docker.com/engine/reference/commandline/cp/    
 
-I won't provide dynamic\_traces\_.gz because they are really heavy and they 
-would make this repository too big (just run trace.sh if need them).  
+I won't provide dynamic\_traces\_.gz because they are often >100MB and they 
+would make this repository too big (run trace.sh to build them in case).  
 
 I provide tests made for minerva, lenet5, cnn10, vgg16 and elu 16, because their
 model is provided with SMAUG and their simulation doesn't take too much time.  
 
 My baseline system mimics the one in SMAUG paper at page 6:  
-https://arxiv.org/pdf/1912.04481.pdf
-
+https://arxiv.org/pdf/1912.04481.pdf  
 But it has only one CPU instead of eight (--num-cpu=1) because I find stats 
 being more manageable this way.  
 
