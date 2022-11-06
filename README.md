@@ -29,6 +29,9 @@ their experiments folder for minerva (smv-accel.cfg and gem5.cfg).
 
 I have been able of testing also the systolic array that sadly works only for
 convolutions: folders with -sys appended have this enabled.  
+I have enabled this appending `--use-systolic-array` to trace.sh and run.sh 
+(where they call SMAUG binary) and copying in gem5.cfg the configuration of the 
+systolic array from a file provided in SMAUG.
 
 I also provide some script to analize the stats.  
 `bash stats.sh PATH/TO/STATS.TXT`  
