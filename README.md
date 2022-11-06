@@ -11,7 +11,8 @@ Beware that compiling gem5-aladdin which SMAUG needs is really slow.
 
 This folder should be copied in `/workspace/smaug/experiments/sims/`.  
 To copy stuff from your pc to a docker volume you need to use a command like
-this: `docker cp host:source container:destination`.   
+this:  
+`docker cp host:source container:destination`.   
 Docker docs about cp: https://docs.docker.com/engine/reference/commandline/cp/    
 
 I won't provide dynamic\_traces\_.gz because they are really heavy and they 
