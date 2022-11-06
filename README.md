@@ -3,8 +3,7 @@
 In this repository I will upload some test I have done with SMAUG.  
 
 SMAUG is a framework for simulation of systems for deep learning applications.  
-You can find SMAUG's repo and more info here:  
-https://github.com/harvard-acc/smaug   
+You can find SMAUG's repo and more info here: https://github.com/harvard-acc/smaug   
 
 I use the docker image provided from SMAUG developers.  
 Beware that compiling gem5-aladdin which SMAUG needs is really slow.  
