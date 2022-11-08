@@ -3,10 +3,10 @@
 In this repository I will upload some test I have done with SMAUG.  
 
 SMAUG is a framework for simulation of systems for deep learning applications.  
-You can find SMAUG's repo and more info here: https://github.com/harvard-acc/smaug   
+SMAUG's repo: https://github.com/harvard-acc/smaug   
 
 I use the docker image provided from SMAUG developers.  
-Beware that compiling gem5-aladdin which SMAUG needs is really slow.  
+Beware that compiling gem5-aladdin (needed by SMAUG) is really slow.  
 
 This folder should be copied in `/workspace/smaug/experiments/sims/`.  
 To copy stuff from your pc to a docker volume you need to use a command like this: `docker cp host:source container:destination`.   
